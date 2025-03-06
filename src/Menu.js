@@ -5,7 +5,7 @@ import Pizza from "./Pizza";
 function Menu() {
     return (
         <div className="Menu">
-            <h1>Menu</h1>
+            <h2>Menu</h2>
             {pizzaData.map((pizza) => (
                 <Pizza
                     name={pizza.name}
