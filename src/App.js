@@ -1,20 +1,15 @@
 import "./App.css";
-import pizzaData from "./data";
-import Pizza from "./Pizza";
+import Header from "./Header";
+import Menu from "./Menu";
+import Footer from "./Footer";
 
 function App() {
     return (
         <div className="App">
-            <h1>working</h1>
-            {pizzaData.map((pizza) => {
-                return <Pizza
-                            name={pizza.name}
-                            ingredients={pizza.ingredients}
-                            price={pizza.price}
-                            photoName={pizza.photoName}
-                            soldOut={pizza.soldOut}
-                        />;
-            })}
+            <Header />
+            <Menu />
+            <Footer />
+            
         </div>
     );
 }
