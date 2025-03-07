@@ -1,15 +1,16 @@
 import "./Pizza.css";
 
 function Pizza(props) {
-    const { name, ingredients, price, photoName, soldOut } = props;
+    const { name, ingredients, price, photoName, soldOut } = props.pizzaObj;
 
     return (
         <div className="Pizza">
-            <div>
-                <img className="Pizza-img" src={photoName} alt={name} />
+            <img src={photoName} alt={name} />
+            <li>
                 <h3>{name}</h3>
                 <p>{ingredients}</p>
-            </div>
+                <span>{price}</span>
+            </li>
         </div>
     );
 }

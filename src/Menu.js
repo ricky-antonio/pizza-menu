@@ -6,15 +6,11 @@ function Menu() {
     return (
         <div className="Menu">
             <h2>Menu</h2>
-            {pizzaData.map((pizza) => (
-                <Pizza
-                    name={pizza.name}
-                    ingredients={pizza.ingredients}
-                    price={pizza.price}
-                    photoName={pizza.photoName}
-                    soldOut={pizza.soldOut}
-                />
+            <ul className="Menu-pizzas">
+            {pizzaData.map((pizza, i) => (
+                <Pizza pizzaObj={pizza} key={i}/>
             ))}
+            </ul>
         </div>
     )
 }

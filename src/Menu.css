@@ -3,9 +3,9 @@
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-  }
-  
-  .Menu h2 {
+}
+
+.Menu h2 {
     display: inline-block;
     padding: 1rem 0;
     border-top: 2px solid currentColor;
@@ -14,11 +14,18 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 500;
-  }
-  
-  .Menu > p {
+}
+
+.Menu > p {
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.6;
     width: 80%;
-  }
+}
+
+.Menu-pizzas {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
