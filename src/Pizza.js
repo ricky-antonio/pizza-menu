@@ -1,7 +1,7 @@
 import "./Pizza.css";
 
-function Pizza(props) {
-    const { name, ingredients, price, photoName, soldOut } = props.pizzaObj;
+function Pizza({pizzaObj}) {
+    const { name, ingredients, price, photoName, soldOut } = pizzaObj;
 
     return (
         <div className="Pizza">
@@ -9,7 +9,7 @@ function Pizza(props) {
             <li>
                 <h3>{name}</h3>
                 <p>{ingredients}</p>
-                <span>{price}</span>
+                <span>{price}</span> {soldOut && "Sold Out"}
             </li>
         </div>
     );
