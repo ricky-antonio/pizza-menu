@@ -6,6 +6,7 @@ function Menu() {
     return (
         <div className="Menu">
             <h2>Menu</h2>
+            <p>Authentic Italian cuisine. All from our stone ove, all organic, all delicious.</p>
             <ul className="Menu-pizzas">
             {pizzaData.map((pizza, i) => (
                 <Pizza pizzaObj={pizza} key={i}/>
